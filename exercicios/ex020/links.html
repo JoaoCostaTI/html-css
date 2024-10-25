@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* SELETORES PERSONALIZADOS
+            #  = ID
+            .  = Class
+            :  = Pseudo-Class
+            :: = Pseudo-Element
+            >  = Children
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: rgb(155, 114, 114);
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        .especial::after{
+            content: ' asdf ';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(148, 110, 110);
+        }
+        .especial{
+            background-color: darkred;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/joao.mmcosta/" target="_blank" >Instagram</a></li>
+        <li><a href="https://www.youtube.com/@joao.mmcosta" target="_blank" class="especial" >Youtube</a></li>
+        <li><a href="https://www.linkedin.com/in/jo%C3%A3o-mendes-8b17831b8/" target="_blank">Linkedin</a></li>
+    </ul>
+</body>
+</html>
