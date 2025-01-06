@@ -6,6 +6,7 @@
     --font1: Verdana, Geneva, Tahoma, sans-serif;
     --font2: 'Passion One', Cursive;
     --font3: 'Sriracha', cursive;
+
 }
 
 .passion-one-regular {
@@ -36,6 +37,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body{
@@ -50,13 +52,14 @@ header{
     background-color: black;
     color: white;
     text-align: center;
-
+    
 }
 
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--font2);
+    font-size: 10vw;
 }
 
 header > p{
@@ -80,6 +83,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 3.5vw;
 }
 
 section.normal{
@@ -95,7 +100,8 @@ section.imagem{
 
 section.imagem > p{
     background-color: rgba(0, 0, 0, 0.308);
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
 }
 
 
