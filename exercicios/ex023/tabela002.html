@@ -14,14 +14,24 @@
         table {
             border-collapse: collapse;
             width: 500px;
+            position: relative;
+        }
+        tfoot,thead {
+            background-color: gray;
+            color: white;
         }
 
-        td,
-        th {
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        td,th {
             border: 1px solid black;
             padding: 10px;
             text-align: center;
             vertical-align: middle;
+            
         }
 
         .number {
@@ -29,14 +39,20 @@
 
         }
 
-        thead,
-        tfoot {
-            background-color: gray;
-            color: white;
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
+        
 
         td.num{
             text-align: right;
+        }
+
+        tr:nth-child(2n) { 
+            background-color: #f2f2f2;
         }
     </style>
 </head>
@@ -45,6 +61,7 @@
     <h1>Uso de tabelas Grandes</h1>
     <!--
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -53,10 +70,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
 
@@ -112,10 +130,31 @@
         </tbody>
 
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td class="num"><strong>169.973.218</strong></td>
         </tfoot>
     </table>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iste aspernatur officia, vero quod inventore veniam minus porro eligendi dolorem esse delectus in eaque voluptatem nam vitae omnis, pariatur ullam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque assumenda aspernatur molestiae cum architecto, nobis iusto quos distinctio velit ratione obcaecati blanditiis corporis commodi amet? Quis quo itaque corporis iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iste aspernatur officia, vero quod inventore veniam minus porro eligendi dolorem esse delectus in eaque voluptatem nam vitae omnis, pariatur ullam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque assumenda aspernatur molestiae cum architecto, nobis iusto quos distinctio velit ratione obcaecati blanditiis corporis commodi amet? Quis quo itaque corporis iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iste aspernatur officia, vero quod inventore veniam minus porro eligendi dolorem esse delectus in eaque voluptatem nam vitae omnis, pariatur ullam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque assumenda aspernatur molestiae cum architecto, nobis iusto quos distinctio velit ratione obcaecati blanditiis corporis commodi amet? Quis quo itaque corporis iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iste aspernatur officia, vero quod inventore veniam minus porro eligendi dolorem esse delectus in eaque voluptatem nam vitae omnis, pariatur ullam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque assumenda aspernatur molestiae cum architecto, nobis iusto quos distinctio velit ratione obcaecati blanditiis corporis commodi amet? Quis quo itaque corporis iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iste aspernatur officia, vero quod inventore veniam minus porro eligendi dolorem esse delectus in eaque voluptatem nam vitae omnis, pariatur ullam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque assumenda aspernatur molestiae cum architecto, nobis iusto quos distinctio velit ratione obcaecati blanditiis corporis commodi amet? Quis quo itaque corporis iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iste aspernatur officia, vero quod inventore veniam minus porro eligendi dolorem esse delectus in eaque voluptatem nam vitae omnis, pariatur ullam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque assumenda aspernatur molestiae cum architecto, nobis iusto quos distinctio velit ratione obcaecati blanditiis corporis commodi amet? Quis quo itaque corporis iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iste aspernatur officia, vero quod inventore veniam minus porro eligendi dolorem esse delectus in eaque voluptatem nam vitae omnis, pariatur ullam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque assumenda aspernatur molestiae cum architecto, nobis iusto quos distinctio velit ratione obcaecati blanditiis corporis commodi amet? Quis quo itaque corporis iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iste aspernatur officia, vero quod inventore veniam minus porro eligendi dolorem esse delectus in eaque voluptatem nam vitae omnis, pariatur ullam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque assumenda aspernatur molestiae cum architecto, nobis iusto quos distinctio velit ratione obcaecati blanditiis corporis commodi amet? Quis quo itaque corporis iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iste aspernatur officia, vero quod inventore veniam minus porro eligendi dolorem esse delectus in eaque voluptatem nam vitae omnis, pariatur ullam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque assumenda aspernatur molestiae cum architecto, nobis iusto quos distinctio velit ratione obcaecati blanditiis corporis commodi amet? Quis quo itaque corporis iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iste aspernatur officia, vero quod inventore veniam minus porro eligendi dolorem esse delectus in eaque voluptatem nam vitae omnis, pariatur ullam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque assumenda aspernatur molestiae cum architecto, nobis iusto quos distinctio velit ratione obcaecati blanditiis corporis commodi amet? Quis quo itaque corporis iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iste aspernatur officia, vero quod inventore veniam minus porro eligendi dolorem esse delectus in eaque voluptatem nam vitae omnis, pariatur ullam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque assumenda aspernatur molestiae cum architecto, nobis iusto quos distinctio velit ratione obcaecati blanditiis corporis commodi amet? Quis quo itaque corporis iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iste aspernatur officia, vero quod inventore veniam minus porro eligendi dolorem esse delectus in eaque voluptatem nam vitae omnis, pariatur ullam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque assumenda aspernatur molestiae cum architecto, nobis iusto quos distinctio velit ratione obcaecati blanditiis corporis commodi amet? Quis quo itaque corporis iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iste aspernatur officia, vero quod inventore veniam minus porro eligendi dolorem esse delectus in eaque voluptatem nam vitae omnis, pariatur ullam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque assumenda aspernatur molestiae cum architecto, nobis iusto quos distinctio velit ratione obcaecati blanditiis corporis commodi amet? Quis quo itaque corporis iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iste aspernatur officia, vero quod inventore veniam minus porro eligendi dolorem esse delectus in eaque voluptatem nam vitae omnis, pariatur ullam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque assumenda aspernatur molestiae cum architecto, nobis iusto quos distinctio velit ratione obcaecati blanditiis corporis commodi amet? Quis quo itaque corporis iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iste aspernatur officia, vero quod inventore veniam minus porro eligendi dolorem esse delectus in eaque voluptatem nam vitae omnis, pariatur ullam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque assumenda aspernatur molestiae cum architecto, nobis iusto quos distinctio velit ratione obcaecati blanditiis corporis commodi amet? Quis quo itaque corporis iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iste aspernatur officia, vero quod inventore veniam minus porro eligendi dolorem esse delectus in eaque voluptatem nam vitae omnis, pariatur ullam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque assumenda aspernatur molestiae cum architecto, nobis iusto quos distinctio velit ratione obcaecati blanditiis corporis commodi amet? Quis quo itaque corporis iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iste aspernatur officia, vero quod inventore veniam minus porro eligendi dolorem esse delectus in eaque voluptatem nam vitae omnis, pariatur ullam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque assumenda aspernatur molestiae cum architecto, nobis iusto quos distinctio velit ratione obcaecati blanditiis corporis commodi amet? Quis quo itaque corporis iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iste aspernatur officia, vero quod inventore veniam minus porro eligendi dolorem esse delectus in eaque voluptatem nam vitae omnis, pariatur ullam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque assumenda aspernatur molestiae cum architecto, nobis iusto quos distinctio velit ratione obcaecati blanditiis corporis commodi amet? Quis quo itaque corporis iusto?
+    </p>
 </body>
 
 </html>
