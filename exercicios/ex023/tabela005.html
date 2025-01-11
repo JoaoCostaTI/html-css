@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 5</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        thead {
+            color: black;
+        }
+        .destaque{
+            background-color: greenyellow;
+        }
+        col.cnome{
+            background-color: greenyellow;
+        }
+        col.csexo{
+           background: yellow; 
+        }
+        .amarelo{
+            background-color: yellow;
+        }
+        .vermelho{
+            background-color: red;;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Exercicio de Tabelas</h1>
+    <table>
+        <colgroup>
+            <col class="amarelo">
+            <col class="vermelho" span="2">
+            <col class="amarelo" >
+            
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissao</th>
+        </tr>
+        <tr>
+            <td>Pedro Silva</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Engenheiro</td>
+        </tr>
+        <tr>
+            <td>Maria Souza</td>
+            <td>F</td>
+            <td>28</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>João Pereira</td>
+            <td>M</td>
+            <td>35</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Larissa Lima</td>
+            <td>F</td>
+            <td>24</td>
+            <td>Designer</td>
+        </tr>
+        <tr>
+            <td>Lucas Oliveira</td>
+            <td>M</td>
+            <td>27</td>
+            <td>Advogado</td>
+        </tr>
+        <tr>
+            <td>Aline Costa</td>
+            <td>F</td>
+            <td>32</td>
+            <td>Arquiteta</td>
+        </tr>
+        <tr>
+            <td>Carlos Mendes</td>
+            <td>M</td>
+            <td>29</td>
+            <td>Desenvolvedor</td>
+        </tr>
+        <tr>
+            <td>Bianca Rodrigues</td>
+            <td>F</td>
+            <td>26</td>
+            <td>Jornalista</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
