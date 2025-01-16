@@ -7,17 +7,18 @@
 </head>
 <body>
     <h1>Meu segundo formulário</h1>
-    <form action="login.php" method="post">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
-            <label for="iuser">Usuario:</label>
-            <input type="text" name="user" id="iuser">
+            <label for="iuser">Usuario: </label>
+            <input type="text" name="user" id="iuser" required minlength="5" placeholder="@teste.com.br" autocomplete="name">
         </p>
         <p>
             <label for="ipw">Senha:</label>
-            <input type="password" name="pw" id="ipw" >
+            <input type="password" name="pw" id="ipw" required minlength="8" maxlength="25" placeholder="*********">
         </p>
         <p>
             <input type="submit" value="Entrar">
+            <input type="reset" value="Limpar">
         </p>
     </form>
 </body>
