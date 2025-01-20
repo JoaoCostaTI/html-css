@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+</head>
+<body>
+    <h1>EX Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sex" id="isexm"> <label for="isexm">Masculino</label> <br> 
+            <input type="radio" name="sex" id="isexf"> <label for="isexf">Feminino</label> <br>
+            <input type="radio" name="sex" id="isexp"> <label for="isexp">Prefiro não responder</label> <br>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+
+            <input type="checkbox" name="esvolei" id="iesvolei"> <label for="iesvolei">Volei</label> <br>
+
+            <input type="checkbox" name="esbasquete" id="iesbasquete" checked> <label for="iesbasquete">Basquete</label> <br>
+
+            <input type="checkbox" name="essoft" id="iessoft"> <label for="iessoft">Softbol</label> <br>
+
+            <input type="checkbox" name="estenis" id="iestenis"> <label for="iestenis">Tenis</label> <br>
+
+            <input type="checkbox" name="esfutsal" id="iesfutsal"> <label for="iesfutsal">Futsal</label> <br>
+
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset"  value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
