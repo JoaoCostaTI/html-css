@@ -51,7 +51,7 @@ header > nav{
 
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-end;
+    
 }
 
 header > nav > a{
@@ -70,6 +70,24 @@ header > nav > a:hover{
     color: #F2F2F2;
     transition: background-color 0.2s;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.356);
+}
+
+header > h1#titulo{
+    border: 1px dotted black;
+    flex: 0 1 350px;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+
+header > nav#logo{
+    border: 1px dotted black;
+    flex: 1 1 100px;
+    justify-content: flex-end;   
+}
+
+header > nav#menu{
+    border: 1px dotted black;
+    flex: 1 1 300px;
 }
 
 main{

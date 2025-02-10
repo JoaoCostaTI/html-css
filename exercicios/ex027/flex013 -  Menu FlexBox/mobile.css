@@ -9,6 +9,14 @@ header > h1{
     flex: 0 0 50px;
 }
 
+
+
 header > nav > a {
     width: 90vw;
+}
+
+header > nav#logo{
+    border: 1px dotted black;
+    flex: 1 1 100px;
+    justify-content: center;   
 }
