@@ -33,14 +33,41 @@ header{
     border-radius: 10px;
     margin: 5px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.356);
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header > h1{
     border: 1px dotted black;
+    flex: 0 0 450px;
 }
 
 header > nav{
     border: 1px dotted black;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+header > nav > a{
+    background-color: #F2F2F2;
+    color: #0378A6;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header > nav > a:hover{
+    background-color: #0378A6;
+    color: #F2F2F2;
+    transition: background-color 0.2s;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.356);
 }
 
 main{
