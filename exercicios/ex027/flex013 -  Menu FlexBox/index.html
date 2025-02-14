@@ -5,23 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu com Flex Box</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 500px)">
 </head>
 <body>
-    <header>
-        <h1 id="titulo" class="titulo">Intranet Senai Paulo de Tarso</h1>
-        <nav id="logo">
-            <img src="pics/logoSenai.png" alt="">
-        </nav>
-        <nav id="menu">
-            <a href="">Biblioteca</a>
-            <a href="">Sistema de Chamados</a>
-            <a href="">Secretaria</a>
-            <a href="">Outros Links:</a>
-        </nav>
+    <header class="pai">
+        <section class="filho">
+            <section class="tl">
+                <nav id="logo" class="logo">
+                    <img src="pics/logoSenai.png" alt="">
+                </nav>
+            </section>
+            <section class="bottom-header">
+                <div class="interface">
+                    <nav>
+                        <ul>
+                            <li class="drop-hover"><a href="">Biblioteca</a>
+                                <div class="drop">
+                                    <a href="">Pergamum</a>
+                                </div>
+                            </li>
+                            <li class="drop-hover"><a href="">Sistema de Chamados</a>
+                                <div class="drop">
+                                    <a href="">Fusion Fiemg</a>
+                                    <a href="">GLPI Senai</a>
+                                </div>
+                            </li>
+                            <li class="drop-hover"><a href="">Secretaria</a>
+                                <div class="drop">
+                                    <a href="">SGE (Citrix)</a>
+                                </div>
+                            </li>
+                            <li class="drop-hover"><a href="">Outros Links:</a>
+                                <div class="drop">
+                                    <a href="">Calendário Oficial</a>
+                                    <a href="">Lista de Ramais</a>
+                                    <a href="">Mais previdência</a>
+                                    <a href="">Portal LG(Intranet Fiemg)</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        </section>
     </header>
-    
-       
     
     <main>
         <h2>Selecione a aplicação</h2>
